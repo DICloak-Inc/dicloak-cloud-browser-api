@@ -18,12 +18,12 @@ This repository contains the official documentation  for the DICloak Browser Ope
 
 The full API documentation is available on the [official website](https://dicloak.com/) 
 
-## Save Environment Configuration
+### Save Environment Configuration
 
 **URL:** `/v2/env`  
 **Method:** `POST`
 
-### Request Parameters
+#### Request Parameters
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -34,7 +34,7 @@ The full API documentation is available on the [official website](https://dicloa
 | proxys | [proxy] | Yes | Proxy account information |
 | system_type | string | No | Startup system type: WINDOW: Windows system (headed browser), LIUNX: Linux system (headless browser), Default: WINDOW |
 
-#### Proxy Object Structure
+##### Proxy Object Structure
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
@@ -44,7 +44,7 @@ The full API documentation is available on the [official website](https://dicloa
 | user_name | string | Yes | Proxy username |
 | passwd | string | Yes | Proxy password |
 
-### Request Examples
+#### Request Examples
 
 - Modify all data
 ```json 
@@ -61,7 +61,7 @@ The full API documentation is available on the [official website](https://dicloa
 ```
 - Modify proxy data
 ```json 
-JSON
+
 {
     "proxy_update_type" : "COVER",
     "proxys": [
@@ -72,8 +72,7 @@ JSON
 ```
 - Modify proxy method
 ```json 
-JSON
-json
+
 {
     "proxy_way": "USE_ONE"
 }
@@ -93,11 +92,10 @@ json
 }
 ```
 
-### Response Example
+#### Response Example
 
 ```json 
 
-SQL
 {
     "code": 0,
     "msg": "success",
@@ -105,19 +103,19 @@ SQL
 }
 ```
 
-## Open Environment
+### Open Environment
 
 **URL:** `/v2/env/open_env`  
 **Method:** `PATCH`
 
-### Response Parameters
+#### Response Parameters
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
 | url | string | Yes | CDP control connection |
 | session_id | string | Yes | Current CDP session ID |
 
-### Error Codes
+#### Error Codes
 
 | Error Code | Message | Description |
 |------------|---------|-------------|
@@ -126,7 +124,7 @@ SQL
 | 300106 | Cloud browser exception | Cloud browser startup exception, please check information for judgment (commonly due to proxy information errors, unable to start) |
 | 300000 | Business exception | System exception, please check information for judgment |
 
-### Response Example
+#### Response Example
 
 ```json 
 {
@@ -139,12 +137,12 @@ SQL
 }
 ```
 
-## Close Environment
+### Close Environment
 
 **URL:** `/v2/env/close_env`  
 **Method:** `PATCH`
 
-### Response Example
+#### Response Example
 ```json 
 {
     "code": 0,
@@ -153,18 +151,18 @@ SQL
 }
 ```
 
-## Token Generation
+### Token Generation
 
 **URL:** `/v2/env/generate_token`  
 **Method:** `PATCH`
 
-### Response Parameters
+#### Response Parameters
 
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
 | token | string | Yes | New environment usage token |
 
-### Response Example
+#### Response Example
 ```json 
 {
     "code": 0,
