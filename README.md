@@ -131,7 +131,7 @@ The full API documentation is available on the [official website](https://dicloa
     "code": 0,
     "msg": "success",
     "data": {
-        "url": "ws://8.222.226.165:8081/cdp/c0d7fb01933d472687c04bdb47337024",
+        "url": "ws://ip:port/cdp/c0d7fb01933d472687c04bdb47337024",
         "session_id": "c0d7fb01933d472687c04bdb47337024"
     }
 }
@@ -168,7 +168,7 @@ The full API documentation is available on the [official website](https://dicloa
     "code": 0,
     "msg": "success",
     "data": {
-        "token": "64C5D0E8-DCEA-4D21-9D57-9AA1FB913F21"
+        "token": "64CXXXX8-DCEA-4XX1-9D57-9AA1XXXX3F21"
     }
 }
 ```
