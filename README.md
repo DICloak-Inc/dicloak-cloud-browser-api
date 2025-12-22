@@ -13,6 +13,32 @@ This repository contains the official documentation  for the DICloak Browser Ope
     *   [Telegram](https://t.me/DICloakBrowser_Official)
     *   [YouTube](https://www.youtube.com/@DICloakBrowser)
     *   [Instagram](https://instagram.com/dicloak/)
+      
+## DICloak Browser Automation Scripts
+
+This repository provides two Python automation scripts built on the **DICloak Cloud Browser OpenAPI**, enabling programmatic control of anti-detection browser environments in both **headless** and **headed** modes. Ideal for secure multi-account management, affiliate marketing, social media automation, ad testing, and web data scraping.
+
+### 📂 Scripts Overview
+
+| Script File | Mode | Use Case | System Type |
+|-------------|------|---------|-------------|
+| [`dicloak_headless.py`](dicloak_headless.py) | Headless | Background automation, server deployment, high-concurrency tasks | Linux (Headless) |
+| [`dicloak_headed.py`](dicloak_headed.py) | Headed | Interactive debugging, visual verification, manual oversight | Windows (Headed) |
+
+### ✨ Key Features
+
+- Programmatically configure browser fingerprints, User-Agent, and proxy settings via DICloak OpenAPI
+- Launch isolated browser profiles with unique digital identities to prevent account association
+- Support flexible proxy strategies: `RANDOM`, `USE_ONE`, `COVER`, or `APPEND`
+- Obtain real Chrome DevTools Protocol (CDP) WebSocket URLs for integration with Puppeteer, Playwright, or custom controllers
+- Automatically manage browser lifecycle (open/close) to optimize resource usage
+- Generate new environment tokens on demand for enhanced security and session isolation
+
+### 🛠️ Requirements
+
+- A valid account and API access from [DICloak](https://dicloak.com/)
+- Working proxy credentials (optional but recommended for multi-account safety)
+- Python 3.10+ with `requests` (or your preferred HTTP client library)
 
 ## 📄 API Documentation
 
