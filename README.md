@@ -14,7 +14,7 @@ This repository contains the official documentation  for the DICloak Browser Ope
     *   [YouTube](https://www.youtube.com/@DICloakBrowser)
     *   [Instagram](https://instagram.com/dicloak/)
       
-## DICloak Browser Automation Scripts
+## DICloak Cloud Browser Automation Scripts
 
 This repository provides two Python automation scripts built on the **DICloak Cloud Browser OpenAPI**, enabling programmatic control of anti-detection browser environments in both **headless** and **headed** modes. Ideal for secure multi-account management, affiliate marketing, social media automation, ad testing, and web data scraping.
 
